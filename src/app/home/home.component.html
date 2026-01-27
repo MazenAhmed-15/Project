@@ -1,0 +1,40 @@
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Sports Collection</h1>
+    <p>Discover the latest trends in footwear</p>
+    <button>Shop Now</button>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+  <a><button
+    class="category"
+    *ngFor="let c of categories">
+    {{ c }}
+  </button></a>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products container">
+  <h2>Trending Products</h2>
+
+  <div class="product-grid">
+    <div class="product-card" *ngFor="let p of products">
+
+      <span class="tag" *ngIf="p.tag">{{ p.tag }}</span>
+
+      <img [src]="p.image" alt="product">
+
+      <h3>{{ p.name }}</h3>
+
+      <div class="rating">★★★★★</div>
+
+      <div class="bottom">
+        <span class="price">${{ p.price }}</span>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>

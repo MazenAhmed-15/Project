@@ -1,0 +1,44 @@
+<div class="auth-container">
+  
+  <!-- LEFT SIDE -->
+  <div class="left-panel">
+    <h2>Signin</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input
+        type="text"
+        placeholder="Username"
+        formControlName="username"
+      />
+
+      <input
+        type="password"
+        placeholder="Password"
+        formControlName="password"
+      />
+
+      <button type="submit">Signin</button>
+    </form>
+
+    <p class="or">or signin with</p>
+
+    <div class="social-icons">
+      <span class="icon fb">f</span>
+      <span class="icon g">G+</span>
+      <span class="icon in">in</span>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-panel">
+    <h2>Welcome back!</h2>
+    <p>
+      Welcome back! We are so happy to have you here.
+      It's great to see you again. We hope you had a safe
+      and enjoyable time away.
+    </p>
+
+    <button class="outline-btn">No account yet? Signup.</button>
+  </div>
+
+</div>

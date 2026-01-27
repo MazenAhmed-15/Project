@@ -1,0 +1,25 @@
+<section class="products container">
+  <h2>Men Products</h2>
+
+  
+  <div class="product-grid">
+    <div class="product-card" *ngFor="let p of products">
+
+      <span class="tag" *ngIf="p.tag">{{ p.tag }}</span>
+
+      <img [src]="p.image" alt="product">
+
+      <h3>{{ p.name }}</h3>
+
+      <div class="rating">★★★★★</div>
+
+      <div class="bottom">
+        <span class="price">${{ p.price }}</span>
+        <button (click)="addToCart(p)">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
