@@ -13,7 +13,7 @@
       rgba(0,0,0,.35),
       rgba(0,0,0,.35)
     ),
-    url('/assets/OIP (4).jpg') center/cover;
+    url('assets/OIP (4).jpg') center/cover;
   display: flex;
   align-items: center;
   padding-left: 60px;
